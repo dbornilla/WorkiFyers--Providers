@@ -1,0 +1,192 @@
+/* For Colors and Styling */
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(0deg, 0%, 100%);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.231);
+}
+.header .logo {
+  color: hsl(201deg, 33%, 16%);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.header .logo .icon {
+  font-size: 25px;
+  color: #030746;
+  transform: translateY(-3px);
+  padding-right: 1rem;
+}
+
+.brand {
+  font-size: 1.8rem;
+}
+
+.img-profile {
+  height: 50px;
+}
+
+.profile-icon {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  right: 2%;
+}
+
+.sub-wrap {
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.sub-wrap.open-menu {
+  max-height: 400px;
+}
+.sub-wrap .sub-menu {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+}
+.sub-wrap .profile-info {
+  display: flex;
+  text-align: center;
+}
+.sub-wrap .profile-info h3 {
+  font-weight: 500;
+}
+.sub-wrap hr {
+  border: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #ccc;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.sub-wrap .sub-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+.sub-wrap .sub-link p {
+  width: 100%;
+}
+.sub-wrap .sub-link:hover p {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    position: absolute;
+    background: hsl(0deg, 0%, 93%);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: -500rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    transition: 0.5s ease-in-out;
+  }
+  .header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: hsl(240deg, 4%, 36%);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: #030746;
+  }
+  .header .navBar .navLists .btn {
+    margin-top: 1rem;
+  }
+  .header .navBar .navLists .btn a {
+    font-weight: 600;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: #030746;
+  }
+  .header .navBar .closeNavbar:hover {
+    color: #1E88D8;
+  }
+  .header .navBar.activeNavbar {
+    top: 7rem;
+  }
+  .toggleNavbar .icon {
+    font-size: 25px;
+    color: #030746;
+  }
+  .toggleNavbar:hover .icon {
+    color: #1E88D8;
+  }
+}
+@media screen and (min-width: 740px) {
+  .toggleNavbar,
+.closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .navBar .navLists .navItem .navLink {
+    color: hsl(240deg, 4%, 36%);
+    padding: 0 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .navBar .navLists .navItem .navLink:hover {
+    color: #030746;
+  }
+  .navBar .navLists .btn {
+    margin-left: 1rem;
+  }
+  .navBar .navLists .btn a {
+    color: hsl(0deg, 0%, 100%);
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navBar .navLists .navItem {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .header {
+    padding: 1rem 8.5rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */

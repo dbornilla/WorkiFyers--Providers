@@ -1,0 +1,235 @@
+/* For Colors and Styling */
+$PrimaryColor: #030746;
+$SecondaryColor: #1E88D8;
+$gradientColor: linear-gradient(to right, #030746, #1E88D8 );
+$whiteColor: hsl(0, 0%, 100%);
+$blackColor: hsl(201, 33%, 16%);
+$textColor: hsl(240, 4%, 36%);
+$whiteColorDeam: hsl(0, 0%, 93%);
+$greyText: rgb(190, 190, 190);
+$inputColor: rgb(239, 239, 239);
+$bodyColor: rgb(240, 240, 246);
+$cardBG: rgb(225, 225, 235);
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $whiteColor;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.231);
+
+  .logo {
+    color: $blackColor;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+
+    .icon {
+      font-size: 25px;
+      color: $PrimaryColor;
+      transform: translateY(-3px);
+      padding-right: 1rem;
+    }
+  }
+}
+
+.brand {
+  font-size: 1.8rem;
+}
+
+
+.img-profile {
+  height: 50px;
+}
+
+.profile-icon {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  right: 2%;
+}
+
+.sub-wrap {
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+
+  &.open-menu {
+    max-height: 400px;
+  }
+
+  .sub-menu {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .profile-info {
+    display: flex;
+    text-align: center;
+
+    h3 {
+      font-weight: 500;
+    }
+  }
+
+  hr {
+    border: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #ccc;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .sub-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+
+    p {
+      width: 100%;
+    }
+
+    &:hover p {
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    position: absolute;
+    background: $whiteColorDeam;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: -500rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    transition: 0.5s ease-in-out;
+
+    .navLists {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      margin: auto;
+      padding: 0.5rem 0;
+
+      .navItem {
+        padding: 0.5rem 0;
+
+        .navLink {
+          color: $textColor;
+          font-size: 0.9rem;
+          font-weight: 600;
+
+          &:hover {
+            color: $PrimaryColor;
+          }
+        }
+      }
+
+      .btn {
+        margin-top: 1rem;
+
+        a {
+          font-weight: 600;
+          color: $whiteColor;
+        }
+      }
+    }
+
+    .closeNavbar {
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      color: $PrimaryColor;
+
+      &:hover {
+        color: $SecondaryColor;
+      }
+    }
+
+    &.activeNavbar {
+      top: 7rem;
+    }
+  }
+
+  .toggleNavbar .icon {
+    font-size: 25px;
+    color: $PrimaryColor;
+  }
+
+  .toggleNavbar:hover .icon {
+    color: $SecondaryColor;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .toggleNavbar,
+  .closeNavbar {
+    display: none;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .navItem .navLink {
+      color: $textColor;
+      padding: 0 0.45rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+
+      &:hover {
+        color: $PrimaryColor;
+      }
+    }
+
+    .btn {
+      margin-left: 1rem;
+
+      a {
+        color: $whiteColor;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .header .navBar .navLists .navItem {
+    padding: 0 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .header {
+    padding: 1rem 8.5rem;
+  }
+}

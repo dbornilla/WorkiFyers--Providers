@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+.btn-message{
+    width: 70px;
+    height: 70px;
+    
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 #666;
+    transition: all 0.1s ease-in-out;
+    z-index: 10000;
+    font-size: 50px;
+    
+    text-align: center;
+    line-height: 70px;
+    
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.btn-message:hover{
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+}
+
+.message-inbox{
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    top: 90px;
+    right: 0px;
+    z-index: 10001;
+    
+    
+    
+}
+
+.message-inbox .message-head{
+    
+    border-top-left-radius: 15px;
+    background-color: #030746;
+    color: white;
+    height: 40px;
+}
+
+.message-inbox .message-head h3{
+    
+    width: 120px;
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+    
+    font-size: 20px;
+}
+
+.message-inbox .message-head .close-head {
+    
+    cursor: pointer;
+    color: white;
+    font-size: 45px;
+    font-weight: 100;
+    position: relative;
+    top: -45px;
+    float: right;
+  }
+
+.message-inbox .message-body{
+    padding: 2px;
+    background-color: whitesmoke;
+    
+    height: 500px;
+}
+
+.message-inbox .message-cards{
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    width: 95%;
+    
+    
+    height: 400px;
+}
+
+.message-inbox .message-cards .message-box{
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    height: 60px;
+    
+}
+
+.message-inbox .message-cards .message-box .message-icon{
+    width: 60px;
+    height: 53px;
+    float: left;
+    background-color: blanchedalmond;
+}
+
+.message-inbox .message-cards .message-box .message-icon{
+    border-radius: 25px;
+}
+
+.message-inbox .message-cards .message-box .message-user{
+    float: left;
+    width: 150px;
+    height: 53px;
+    
+    text-align: left;
+}
+
+.message-inbox .message-cards .message-box .message-user p{
+    position: relative;
+    top: 12px;
+    left: 10px;
+}
+
+.message-inbox .message-cards .message-box .message-time{
+    float: left;
+    width: 50px;
+    height: 53px;
+    text-align: right;
+    
+}
+
+.message-inbox .message-cards .message-box .message-time p{
+    position: relative;
+    top: 12px;
+}
+
+
+.message-chat{
+    position: fixed;
+    width: 300px;
+    padding: 2px;
+    
+    height: 100%;
+    top: 90px;
+    right: 0px;
+    z-index: 10002;
+}
+
+.message-chat .message-head{
+    
+    border-top-left-radius: 15px;
+    background-color: #030746;
+    color: white;
+    height: 40px;
+}
+
+.message-chat .message-head h3{
+    
+    width: 120px;
+    position: relative;
+    top: 8px;
+    float: right;
+    right: 20px;
+    font-size: 15px;
+}
+
+.message-chat .message-head i{
+    position: relative;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    top: 8px;
+    margin-left: 5px;
+    
+}
+
+.message-chat .message-body{
+    background-color: white;
+    height: 80%;
+    width: 100%;
+}
+
+.message-chat .message-body .message-body-input input{
+    position: relative;
+    bottom: 0px;
+    font-family: "Karla", sans-serif;
+    outline: 0;
+    padding: 0 12px;
+    height: 40px;
+    width: 100%;
+    font-size: 1em;
+    
+}
+
+.message-chat .message-body section{
+    
+    
+    height: calc(100% - 40px - 40px);
+    padding: 12px;
+    width: 90%;
+    
+}
+
+.message-chat .message-body section div{
+    margin: 12px 0;
+}
+
+.message-chat .message-body section span{
+    display: inline-block;
+    padding: 6px 8px;
+    margin: 1px 0;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.message-chat .message-body section div.me{
+    text-align: right;
+
+}
+
+.message-chat .message-body section div.me span{
+    background-color: #68c;
+    border-radius: 4px 16px 16px 4px;
+}
+
+.message-chat .message-body section div.me span:first-of-type{
+    border-top-left-radius: 16px;
+}
+
+.message-chat .message-body section div.me span:last-of-type{
+    border-bottom-left-radius: 16px;
+}
+
+.message-chat .message-body section div.not-me{
+    text-align: left;
+}
+
+.message-chat .message-body section div.not-me span{
+    background-color: #68c;
+    border-radius: 4px 16px 16px 4px;
+}
+
+.message-chat .message-body section div.not-me span:first-of-type{
+    border-top-left-radius: 16px;
+}
+
+.message-chat .message-body section div.not-me span:last-of-type{
+    border-bottom-left-radius: 16px;
+}
