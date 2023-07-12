@@ -1,39 +1,61 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route, Routes, BrowserRouter} from "react-router-dom";
+import Navbar from '../src/Components/Navbar/Navbar';
+import Axios from 'axios'
+import axios from 'axios';
 
-class App extends Component {
-state = {
-    data: null
-  };
 
-  componentDidMount() {
-    this.callBackendAPI()
-      .then(res => this.setState({ data: res.express }))
-      .catch(err => console.log(err));
-  }
-    // fetching the GET route from the Express server which matches the GET route from server.js
-  callBackendAPI = async () => {
-    const response = await fetch('/express_backend');
-    const body = await response.json();
-
-    if (response.status !== 200) {
-      throw Error(body.message) 
-    }
-    return body;
-  };
-
-  render() {
+function App(){
+  
+    const [services, setServices] = useState([]);
+    useEffect(()=>{
+      axios.get('http://localhost:3001/getServices').then(services =>setServices(services.data)).catch(err => console.log(err))
+    }, [])
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">{this.state.data}</p>
+        <Navbar />
+        <p>hi</p>
+        <table className='table'>
+        <thread>
+          <tr>
+            <th>
+              Services
+            </th>
+            <th>
+              Date
+            </th>
+            <th>
+              time
+            </th>
+            <th>
+              address
+            </th>
+            <th>
+              status
+            </th>
+
+          </tr>
+        </thread>
+        <tbody>
+          {
+            services.map(services =>{
+              return <tr>
+                <td>services.service</td>
+                <td>services.date</td>
+                <td>services.time</td>
+                <td>services.address</td>
+                <td>services.status</td>
+              </tr>
+            })
+          }
+        </tbody>
+        </table>
+        
       </div>
     );
-  }
+  
 }
 
 export default App;

@@ -5,7 +5,7 @@ import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
 import icon from '../../images/bean.jpg'
 import { Link } from 'react-router-dom'
-import Logo from '../../Assets/images/logo.png'
+import Logo from '../../images/logo.png'
 
 
 
