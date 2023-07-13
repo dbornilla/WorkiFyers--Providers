@@ -1,0 +1,77 @@
+.Services-Container{
+    position: relative;
+    
+    top: 80px;
+    height: 550px;
+    width: 100%;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.services-holder{
+    position: relative;
+    
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 90%;
+    height: 450px;
+}
+
+.services-holder .box{
+    background-image: url(../../images/job1.jpg);
+    position: absolute;
+    float: left;
+    margin-left: 20px;
+    width: 25%;
+    height: 200px;
+    color: white;
+}
+
+.services-holder .box .date{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 30px;
+    background-color: red;
+    width: 15%;
+    height: 70px;
+    font-size: larger;
+}
+
+.services-holder .box .status{
+    position: absolute;
+    top: 10px;
+    float: right;
+    right: 5px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: red;
+    width: 25%;
+    height: 25px;
+    text-align: center;
+}
+
+.services-holder .box .infos{
+    position: absolute;
+    margin-left: 10px;
+    top: 70px;
+    width: 80%;
+}
+
+.services-holder .box .infos .titleName{
+    position: absolute;
+    font-size: large;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.services-holder .box .infos .details{
+
+    position: relative;
+    font-size: small;
+    top: 40px;
+}

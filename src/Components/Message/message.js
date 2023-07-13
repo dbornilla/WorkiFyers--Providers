@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 
 import './message.css'
-import IconMessage from '../../Assets/images/messageicon.webp'
-import IconUser from '../../Assets/images/sample-icon.png'
+import IconMessage from '../../images/messageicon.webp'
+import IconUser from '../../images/sample-icon.png'
 
 console.log(IconMessage)
 const Message = () => {
