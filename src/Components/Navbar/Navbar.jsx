@@ -44,28 +44,26 @@ const Navbar = () => {
                     <ul className="navLists flex">
 
                         <li className="navItem">
-                            <a href="#" className="navLink">Home</a>
+                            <Link to="/">
+                                <a href="#" className="navLink">Home</a>
+                            </Link>
                         </li>
 
                         <li className="navItem">
-                            <a href="#about" className="navLink">About</a>
+                            <Link to="/booking">
+                                <a href="#about" className="navLink">Bookings</a>
+                            </Link>
                         </li>
 
                         <li className="navItem">
-                            <a href="#services" className="navLink">Services</a>
+                            <Link to="/offers">
+                                <a href="#services" className="navLink">My services</a>
+                            </Link>
                         </li>
 
-                        <li className="navItem">
-                            <a href="#testimonies" className="navLink">Testimonies</a>
-                        </li>
+                        
 
-                        <li className="navItem">
-                            <a href="#contact" className="navLink">Contact</a>
-                        </li>
-
-                        <button className="btn">
-                            <a href="#" className="navLink">Book Now</a>
-                        </button>
+                        
 
                     
                         <img src={icon} className='profile-icon' onClick={()=>setShow(!show)}></img>
@@ -83,8 +81,8 @@ const Navbar = () => {
                                         <Link to="/booking" className='sub-link' reloadDocument>
                                             <p>Bookings</p>
                                         </Link>
-                                        <Link to="location" className='sub-link' reloadDocument>
-                                            <p>Favorite Professionals</p>
+                                        <Link to="/offers" className='sub-link' reloadDocument>
+                                            <p>My Services</p>
                                         </Link>
                                     </div>
                                 </div>: null

@@ -7,7 +7,7 @@
     border-radius: 10px;
     background-color: white;
 }
-.title{
+.booking-title{
     position: absolute;
     top: 20px;
     margin-left: 70px;
@@ -44,10 +44,11 @@ i{
 
 .cards{
     position: relative;
-    
+    float: left;
     height: 180px;
     width: 30%;
     margin-left: 20px;
+    margin-bottom: 20px;
     top: 5px;
     box-shadow: 0 6px 10px 0 #666;
 }
@@ -85,7 +86,7 @@ i{
     border: solid;
     border-color: brown;
     color: brown;
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
     text-align: center;
 }
@@ -93,5 +94,5 @@ i{
 .cards .card-info .detail{
     position: relative;
     font-size: small;
-    top: 35px;
+    top: 30px;
 }

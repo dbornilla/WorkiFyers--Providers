@@ -6,7 +6,8 @@ import Navbar from '../src/Components/Navbar/Navbar';
 import Services from './Components/Services/services';
 import Message from './Components/Message/message';
 import Booking from './Components/Bookings/booking';
-
+import Offers from './Components/Offers/offer';
+import addService from './Components/Offers/addService';
 
 function App(){
   
@@ -17,8 +18,9 @@ function App(){
         <Message />
         <Routes>
           <Route path='/' element={ < Services />} />
-          
           <Route path='booking' element={ < Booking />} />
+          <Route path='offers' element={ < Offers />} />
+          <Route path='addService' element={ < Offers />} />
         </Routes>
         
         
