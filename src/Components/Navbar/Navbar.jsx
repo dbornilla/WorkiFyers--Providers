@@ -77,11 +77,11 @@ const Navbar = () => {
                                         </div>
                                         <hr></hr>
                                         
-                                        <Link to="/account" className='sub-link' reloadDocument>
-                                            <p>Account Management</p>
+                                        <Link to="/" className='sub-link' reloadDocument>
+                                            <p>Services</p>
                                         </Link>
-                                        <Link to="/book" className='sub-link' reloadDocument>
-                                            <p>Book History</p>
+                                        <Link to="/booking" className='sub-link' reloadDocument>
+                                            <p>Bookings</p>
                                         </Link>
                                         <Link to="location" className='sub-link' reloadDocument>
                                             <p>Favorite Professionals</p>

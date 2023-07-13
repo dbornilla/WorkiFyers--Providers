@@ -7,7 +7,22 @@
     border-radius: 10px;
     background-color: white;
 }
-
+.title{
+    position: absolute;
+    top: 20px;
+    margin-left: 70px;
+}
+.back{
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 #666;
+    transition: all 0.1s ease-in-out;
+    text-align: center;
+}
 i{
     position: relative;
     border: solid black;
@@ -18,4 +33,65 @@ i{
     -webkit-transform: rotate(135deg);
     top: 8px;
     margin-left: 5px;
+}
+
+.booking-holder{
+    position: relative;
+    
+    top: 80px;
+    height: 400px;
+}
+
+.cards{
+    position: relative;
+    
+    height: 180px;
+    width: 30%;
+    margin-left: 20px;
+    top: 5px;
+    box-shadow: 0 6px 10px 0 #666;
+}
+
+.cards .card-img{
+    position: absolute;
+    
+    width: 40%;
+    height: 100%;
+}
+
+.cards .card-img .img-sec{
+    position: relative;
+    top: 50px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.cards .card-info{
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    
+    height: 100%;
+}
+
+.cards .card-info h3{
+    position: relative;
+    top: 20px;
+}
+
+.cards .card-info h4{
+    position: relative;
+    top: 30px;
+    border: solid;
+    border-color: brown;
+    color: brown;
+    width: 40%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cards .card-info .detail{
+    position: relative;
+    font-size: small;
+    top: 35px;
 }
