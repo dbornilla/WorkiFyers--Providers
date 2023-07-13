@@ -121,6 +121,8 @@ i{
     color: burlywood;
 }
 
-.add-Container{
+.Add-Container{
     background-color: red;
+    position: relative;
+    top: 30px;
 }
