@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Routes, BrowserRouter} from "re
 import Navbar from '../src/Components/Navbar/Navbar';
 import Services from './Components/Services/services';
 import Message from './Components/Message/message';
-
+import Booking from './Components/Bookings/booking';
 
 
 function App(){
@@ -14,7 +14,9 @@ function App(){
     return (
       <div className="App">
         <Navbar />
-        <Services />
+        {//<Services />
+        }
+        <Booking />
         <Message />
         
         

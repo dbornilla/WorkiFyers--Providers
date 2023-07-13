@@ -1,0 +1,21 @@
+.Booking-Container{
+    position: relative;
+    left: 140px;
+    top: 80px;
+    height: 500px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+i{
+    position: relative;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    top: 8px;
+    margin-left: 5px;
+}
